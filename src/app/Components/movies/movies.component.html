@@ -1,0 +1,23 @@
+<div class="app-movies">
+  <h2>Filmes populares</h2>
+
+  <div *ngIf="loading">Carregando filmes...</div>
+
+  <div class="app-movies__cards">
+    <div class="app-movies__card" *ngFor="let movie of movies">
+      <div class="app-movies__movie-image">
+        <a class="app-movies__movie-link" routerLink="/movie/{{movie.id}}" routerLinkActive="active" role="link" title="{{ movie.title }}">
+          <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/{{movie.poster_path}}" alt="{{ movie.title }}">
+        </a>
+      </div>
+      <div class="app-movies__card-movie-info">
+        <h3 class="app-movies__movie-title">{{ movie.title }}</h3>
+        <p class="app-movies__movie-vote-average">
+          <strong>{{ movie.vote_average * 10 }}% <i class="material-icons">star_rate</i></strong>
+        </p>
+        <p class="app-movies__movie-overview">{{ movie.overview }}</p>
+        <a class="app-movies__movie-link" routerLink="/movie/{{movie.id}}" routerLinkActive="active" role="link" title="Mais informações"><i class="material-icons">info_outline</i> Mais informações</a>
+      </div>
+    </div>
+  </div>
+</div>

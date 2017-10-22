@@ -1,0 +1,10 @@
+<div class="app-movies__genres">
+  <h2>Filmes por gênero</h2>
+  <ul class="app-movies__categorys">
+    <li *ngFor="let genre of genres" class="app-movies__genre" id="genreID_{{ genre.id }}">
+      <a routerLink="/genres/movies/{{genre.id}}" routerLinkActive="active" role="link" title="{{ genre.name }}">
+        {{ genre.name }}
+      </a>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,14 @@
+.app-nav {
+  margin-left: 3rem;
+
+  &__list li {
+    display: inline-block;
+  }
+
+  &__list a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 1rem;
+    text-decoration: none;
+  }
+}

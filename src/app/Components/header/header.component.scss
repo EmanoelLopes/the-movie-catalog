@@ -1,0 +1,35 @@
+.app-header {
+  background-color: #9C27B0;
+  box-shadow:
+    0 3px 5px -1px rgba(0,0,0,.2),
+    0 6px 10px 0 rgba(0,0,0,.14),
+    0 1px 18px 0 rgba(0,0,0,.12);
+  color: #fff;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 10;
+
+  &__content {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__logo {
+    background-color: #9C27B0;
+    border: 5px solid #fff;
+    color: #fff;
+    font-size: 22px;
+    padding: .5rem;
+
+    > a {
+      color: #fff;
+      display: block;
+      text-decoration: none;
+    }
+
+    .material-icons {
+      font-size: 28px;
+      vertical-align: middle;
+    }
+  }
+}

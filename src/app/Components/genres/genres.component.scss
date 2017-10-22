@@ -1,0 +1,12 @@
+.app-movies__genres {
+
+  &__categorys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__genre {
+    width: 48%;
+  }
+}

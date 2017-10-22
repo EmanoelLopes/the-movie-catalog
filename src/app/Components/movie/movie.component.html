@@ -1,0 +1,37 @@
+<div class="back-to-movies">
+  <a routerLink="/movies" routerLinkActive="active" title="Voltar">
+    <i class="material-icons">arrow_back</i>
+    Voltar
+  </a>
+</div>
+
+<div *ngIf="loading">Carregando filme...</div>
+
+<div class="app-movie">
+  <h2 class="app-movie__title"> {{ movie.title }} - ({{ movie.release_date | date:'yyyy' }})</h2>
+  <div class="app-movie__content">
+    <div class="app-movie__image">
+      <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/{{ movie.poster_path }}" alt="{{ movie.original_title }}">
+    </div>
+    <div class="app-movie__info">
+      <h4 class="app-movie__info-title">Avaliação dos usuários</h4>
+      <div class="app-movie__vote-average">
+        <span>{{ movie.vote_average * 10 }}% <i class="material-icons">star_rate</i></span>
+      </div>
+      <div class="app-movie__info-genres">
+        <h4 class="app-movie__info-title">Gêneros</h4>
+        <span *ngFor="let genre of movie.genres">
+          <a routerLink="/genre/{{genre.id}}" routerLinkActive="active" role="link" title="{{ genre.name }}">  {{ genre.name }}
+          </a>
+        </span>
+      </div>
+      <h4 class="app-movie__info-title">Sinopse</h4>
+      <blockquote class="app-movie__info-tagline" *ngIf="movie.tagline">
+        "{{ movie.tagline }}"
+      </blockquote>
+      <p class="app-movie__info-overview">
+        {{ movie.overview }}
+      </p>
+    </div>
+  </div>
+</div>

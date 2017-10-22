@@ -1,0 +1,90 @@
+.back-to-movies {
+  margin: 2rem 0;
+
+  > a {
+    color: #9C27B0;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .material-icons {
+    vertical-align: middle;
+  }
+}
+
+.app-movie {
+  background-color: #fff;
+  box-shadow:
+    0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  color: #212121;
+  padding: 1rem;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 1rem 0;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__vote-average {
+    padding: 0 0 .75rem;
+
+    span {
+      font-size: 2rem;
+    }
+
+    .material-icons {
+      font-size: 32px;
+      vertical-align: bottom;
+    }
+  }
+
+  &__info {
+    padding: 0 1rem;
+  }
+
+  &__info-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 1rem;
+  }
+
+  &__info-tagline {
+    font-size: 20px;
+    font-style: italic;
+    padding: .75rem 0;
+  }
+
+  &__info-genres,
+  &__info-overview {
+    font-size: 20px;
+    margin: 0 0 1rem;
+  }
+
+  &__info-genres a {
+    color: #333;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__tecnical-info {
+    padding: .75rem 0;
+  }
+
+  &__characters,
+  &__main-cast-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    strong { font-weight: 700; }
+  }
+}
