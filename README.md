@@ -1,4 +1,4 @@
-# FastshopFrontendTest
+# The Movie Catalog - A simple SPA made with [Angular 4](https://github.com/angular/angular) and [The Movie Database API](https://www.themoviedb.org/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
 
