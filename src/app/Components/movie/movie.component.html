@@ -21,7 +21,7 @@
       <div class="app-movie__info-genres">
         <h4 class="app-movie__info-title">Gêneros</h4>
         <span *ngFor="let genre of movie.genres">
-          <a routerLink="/genre/{{genre.id}}" routerLinkActive="active" role="link" title="{{ genre.name }}">  {{ genre.name }}
+          <a routerLink="/genres/movies/{{genre.id}}" routerLinkActive="active" role="link" title="{{ genre.name }}">  {{ genre.name }}
           </a>
         </span>
       </div>
