@@ -15,7 +15,6 @@ export class MovieService {
   private data: string[];
 
   getMovie(movieId): Observable<Movie[]> {
-    console.log(movieId);
     return this.http.get(`${this.BASE_URL}${movieId}?api_key=${this.API_KEY}&${this.PARAMS}`)
       .map(this.extractMovie)
       .catch(this.handleError);

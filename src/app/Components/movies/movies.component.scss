@@ -2,8 +2,13 @@
   color: #212121;
 
   h2 {
-    font-size: 26px;
-    margin: 0 0 2rem;
+    font-size: 16px;
+    margin: 0 0 1rem;
+
+    @media screen and (min-width: 748px) {
+      font-size: 26px;
+      margin: 0 0 2rem;
+    }
   }
 
   &__cards {
@@ -19,9 +24,23 @@
       0 6px 10px 0 rgba(0,0,0,.14),
       0 1px 18px 0 rgba(0,0,0,.12);
     display: flex;
-    margin: 0 0 2rem;
-    width: 48%;
-    padding: 1rem;
+    margin: 0 0 1rem;
+    width: 100%;
+    padding: .5rem;
+
+    @media screen and (min-width: 748px) {
+      margin: 0 0 2rem;
+      padding: 1rem;
+      width: 48%;
+    }
+  }
+
+  &__movie-image img {
+    max-width: 100px;
+
+    @media screen and (min-width: 748px) {
+      max-width: 185px;
+    }
   }
 
   &__card-movie-info {
@@ -29,9 +48,13 @@
   }
 
   &__movie-title {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     margin: 0 0 .75rem;
+
+    @media screen and (min-width: 748px) {
+      font-size: 22px;
+    }
   }
 
   &__movie-vote-average {

@@ -21,7 +21,6 @@ export class GenresComponent implements OnInit {
     this.loading = true;
     this.genresService.getGenres().subscribe((response) => {
       this.genres = response['genres'];
-      console.log(this.genres);
       this.loading = false;
     });
   }

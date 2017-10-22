@@ -3,7 +3,7 @@
 
   > a {
     color: #9C27B0;
-    font-size: 18px;
+    font-size: 22px;
     text-decoration: none;
   }
 
@@ -32,7 +32,7 @@
   }
 
   &__vote-average {
-    padding: 0 0 .75rem;
+    margin: 0 0 2rem;
 
     span {
       font-size: 2rem;
@@ -45,7 +45,7 @@
   }
 
   &__info {
-    padding: 0 1rem;
+    margin: 0 0 2rem;
   }
 
   &__info-title {
@@ -63,7 +63,7 @@
   &__info-genres,
   &__info-overview {
     font-size: 20px;
-    margin: 0 0 1rem;
+    margin: 0 0 2rem;
   }
 
   &__info-genres a {

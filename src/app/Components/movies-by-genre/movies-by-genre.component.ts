@@ -21,7 +21,6 @@ export class MoviesByGenreComponent implements OnInit {
 
     this.loading = true;
     this.moviesByGenreService.getMovie(genreId).subscribe((response) => {
-      console.log(response);
       this.movies = response['results'];
       this.loading = false;
     });

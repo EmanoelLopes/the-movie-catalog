@@ -22,7 +22,6 @@ export class MovieComponent implements OnInit {
     this.loading = true;
     this.movieService.getMovie(movieId).subscribe((response) => {
       this.movie = response;
-      console.log(this.movie);
       this.loading = false;
     });
   }
