@@ -20,6 +20,9 @@ import { MoviesService } from './Components/movies/movies.service';
 import { GenresService } from './Components/genres/genres.service';
 import { MoviesByGenreService } from './Components/movies-by-genre/movies-by-genre.service';
 
+// Pipe
+import { TruncatePipe } from './truncate.pipe';
+
 // Routes
 const AppRoutes = [
   { path: 'movies', component: MoviesComponent },
@@ -38,7 +41,8 @@ const AppRoutes = [
     MainComponent,
     NavbarComponent,
     MoviesComponent,
-    MoviesByGenreComponent
+    MoviesByGenreComponent,
+    TruncatePipe
   ],
   imports: [
     BrowserModule,

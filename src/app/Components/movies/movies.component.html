@@ -15,7 +15,7 @@
         <p class="app-movies__movie-vote-average">
           <strong>{{ movie.vote_average * 10 }}% <i class="material-icons">star_rate</i></strong>
         </p>
-        <p class="app-movies__movie-overview">{{ movie.overview }}</p>
+        <p class="app-movies__movie-overview">{{ movie.overview | truncate:[100, '...'] }}</p>
         <a class="app-movies__movie-link" routerLink="/movie/{{movie.id}}" routerLinkActive="active" role="link" title="Mais informações"><i class="material-icons">info_outline</i> Mais informações</a>
       </div>
     </div>
