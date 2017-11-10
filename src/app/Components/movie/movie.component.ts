@@ -10,7 +10,7 @@ import { MovieService } from './movie.service';
 })
 export class MovieComponent implements OnInit {
   loading = false;
-  movie: Movie[];
+  movie: any = Movie;
   constructor(private movieService: MovieService) { }
 
   ngOnInit() {
