@@ -20,9 +20,11 @@ export class MovieComponent implements OnInit {
   getMovie() {
     const movieId = window.location.pathname.split('/')[2];
     this.loading = true;
-    this.movieService.getMovie(movieId).subscribe((response) => {
-      this.movie = response;
-      this.loading = false;
+    this.movieService
+      .getMovie(movieId)
+      .subscribe((response) => {
+        this.movie = response;
+        this.loading = false;
     });
   }
 }
