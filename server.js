@@ -13,7 +13,7 @@ const forceSSL = function() {
 };
 
 app.get("/*", function(req, res) {
-  res.sendFile(path.join(__dirname + "/app/dist/index.html"));
+  res.sendFile(path.join(__dirname + "/index.html"));
 });
 
 app.use(compression());
