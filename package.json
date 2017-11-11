@@ -4,13 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "build": "ng build",
+    "build": "ng build --aot -prod",
     "test": "ng test",
     "lint": "ng lint",
-    "postinstall": "ng build -prod",
-    "server": "node server.js",
     "e2e": "ng e2e",
-    "start": "ng serve"
+    "start": "node server.js"
   },
   "engines": {
     "node": "8.9.1",
@@ -52,7 +50,6 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "node-sass": "^4.6.0",
     "protractor": "~5.1.2",
-    "reflect-metadata": "^0.1.10",
     "ts-node": "~3.2.0",
     "tslint": "~5.7.0",
     "typescript": "~2.3.3"
