@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "build": "ng build --aot -prod",
+    "build": "ng build",
+    "postinstall": "ng build --aot -prod",
     "deploy": "git push origin master && git push heroku master",
     "test": "ng test",
     "lint": "ng lint",
