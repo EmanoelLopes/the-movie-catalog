@@ -1,5 +1,8 @@
 # The Movie Catalog - A simple SPA made with [Angular 4](https://github.com/angular/angular) and [The Movie Database API](https://www.themoviedb.org/)
 
+## Demo
+Online [Demo](https://the-movie-catalog-sogxpgosgm.now.sh/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
 
 ## Development server
