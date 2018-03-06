@@ -3,6 +3,7 @@ import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 // Components
 import { AppComponent } from './app.component';
@@ -48,6 +49,7 @@ const AppRoutes = [
     BrowserModule,
     HttpModule,
     HttpClientModule,
+    ServiceWorkerModule.register('/ngsw-worker.js'),
     RouterModule.forRoot(
       AppRoutes
     )
