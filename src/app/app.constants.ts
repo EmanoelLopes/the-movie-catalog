@@ -2,8 +2,8 @@ const APP_CONSTANTS = {
   API: {
     HOSTNAME: 'api.themoviedb.org/3/',
     KEY: 'ddbac9c7271014db02e4840fba2911e6',
-    LANGUAGE: 'pt-BR'                                                                                                                                       
-  }                                                                                                                                                                               
+    LANGUAGE: 'pt-BR'
+  }
 };
 
 export const ENDPOINTS = {
